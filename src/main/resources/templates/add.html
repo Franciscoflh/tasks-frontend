@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Tasks</title>
+	<title>Gerenciamento de Tarefas</title>
 	<link rel="stylesheet" href="/tasks/css/bootstrap.min.css">
 	<script src="/tasks/js/bootstrap.min.js"></script>
 </head>
@@ -9,19 +9,19 @@
 <body class="bg-light">
 	<div class="container w-75">
 		<div class="py-5 text-center">
-			<h1>Tasks</h1>
-			<p class="lead">A very simple task management tool</p>
+			<h1>Gerenciamento de Tarefas</h1>
+			<p class="lead">Uma simples ferramenta de controle de tarefas</p>
 		</div>
 		<p class="alert alert-danger" role="alert" th:if="${error != null}" th:text="${error}" id="message" />
 		<form action="save" method="post" th:object="${todo}">
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label">Task:</label>
+				<label class="col-sm-2 col-form-label">Tarefa:</label>
 				<div class="col-sm-10">
 					<input th:field="*{task}" class="form-control" id="task">
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label">Due Date:</label>
+				<label class="col-sm-2 col-form-label">Data:</label>
 				<div class="col-sm-10">
 					<input name="dueDate" th:field="*{dueDate}" class="form-control" id="dueDate">
 				</div>
@@ -30,10 +30,8 @@
 		</form>
 	</div>
 	<footer class="my-5 pt-5 text-muted text-center text-small border-top">
-		<p class="mb-1">&copy; 2020 Wcaquino's DevOps Course</p>
-		<ul class="list-inline">
-			<li class="list-inline-item"><a href="https://wcaquino.me" target="blank">More</a></li>
-		</ul>
+		<p class="mb-1">&copy; 2022 Um site feito por Francisco</p>
+
 	</footer>
 </body>
 
