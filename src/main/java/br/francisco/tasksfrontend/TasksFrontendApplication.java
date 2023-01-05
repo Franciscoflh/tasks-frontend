@@ -1,4 +1,4 @@
-package br.ce.wcaquino.tasksfrontend;
+package br.francisco.tasksfrontend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
